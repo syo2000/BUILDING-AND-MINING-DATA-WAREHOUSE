@@ -1,0 +1,302 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="ff5507e3-250e-4028-a7fa-a3f31614e767" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>NDS DATH</ID>
+  <Name>NDS DATH</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>NDS DATH</DataSourceID>
+  <Schema>
+    <xs:schema id="NDS_x0020_DATH" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="NDS_x0020_DATH" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="c47d82c1-a73c-4c8c-bbb7-64cd6e9d0f26">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Accident" msprop:design-time-name="75c3259f-6cdf-4ac3-9938-c733c3e25b4f" msprop:DbTableName="Accident" msprop:FriendlyName="Accident" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Accident_Index" msprop:design-time-name="b7670381-982b-4369-ab99-0a6a4defeb4f" msprop:DbColumnName="Accident_Index" msprop:FriendlyName="Accident_Index">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="AccidentSeverity" msprop:design-time-name="24d43434-b9e2-45a8-a30d-6db20cbdbb84" msprop:DbColumnName="AccidentSeverity" msprop:FriendlyName="AccidentSeverity" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="LocalAuthority_District" msprop:design-time-name="4b062d70-2b23-44f5-b8c3-c83ecd760eef" msprop:DbColumnName="LocalAuthority_District" msprop:FriendlyName="LocalAuthority_District" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="UrbanOrRuralArea" msprop:design-time-name="6f2900fd-fb7f-4854-a3ac-204096836ae5" msprop:DbColumnName="UrbanOrRuralArea" msprop:FriendlyName="UrbanOrRuralArea" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="RoadType" msprop:design-time-name="2a98ad5f-e674-48f2-98e1-f7944ab42236" msprop:DbColumnName="RoadType" msprop:FriendlyName="RoadType" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="PoliceForce" msprop:design-time-name="f48acff4-32c6-4994-bd81-816a2281242b" msprop:DbColumnName="PoliceForce" msprop:FriendlyName="PoliceForce" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="LocalAuthority_Highway" msprop:design-time-name="f9c38822-b72e-4bda-9d9b-c6a394b58fcd" msprop:DbColumnName="LocalAuthority_Highway" msprop:FriendlyName="LocalAuthority_Highway" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="LightConditions" msprop:design-time-name="9e9d9a89-6b4d-4e3e-a5d3-a1843b58b27b" msprop:DbColumnName="LightConditions" msprop:FriendlyName="LightConditions" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="WeatherConditions" msprop:design-time-name="55227100-3f6c-4e23-9443-7ffe2ad12b47" msprop:DbColumnName="WeatherConditions" msprop:FriendlyName="WeatherConditions" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="RoadSurfaceConditions" msprop:design-time-name="2c0c0752-5940-42ba-9ddf-3e48d4398226" msprop:DbColumnName="RoadSurfaceConditions" msprop:FriendlyName="RoadSurfaceConditions" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Day_of_Week" msprop:design-time-name="864a3e3b-9508-41a9-8d69-c4f5810849cd" msprop:DbColumnName="Day_of_Week" msprop:FriendlyName="Day_of_Week" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="LSOA_of_Accident_Location" msprop:design-time-name="82f8c1d6-be0a-4ded-b96a-5dbe700dc6f3" msprop:DbColumnName="LSOA_of_Accident_Location" msprop:FriendlyName="LSOA_of_Accident_Location" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Time" msprop:design-time-name="72f5c64a-ca3a-4f1c-aa5f-54c5189bb655" msprop:DbColumnName="Time" msprop:FriendlyName="Time" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Date" msprop:design-time-name="e81fca7a-cfa0-464e-a89b-fcc4889c4d57" msprop:DbColumnName="Date" msprop:FriendlyName="Date" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NumberOfVehicles" msprop:design-time-name="018b9976-fb1c-4e59-9813-865209ac3ee8" msprop:DbColumnName="NumberOfVehicles" msprop:FriendlyName="NumberOfVehicles" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NumberOfCasualties" msprop:design-time-name="0fa46267-cf17-4507-8e47-2f0e3407dae2" msprop:DbColumnName="NumberOfCasualties" msprop:FriendlyName="NumberOfCasualties" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Speedlimit" msprop:design-time-name="4fe7251f-5975-4ee9-8028-594532da382f" msprop:DbColumnName="Speedlimit" msprop:FriendlyName="Speedlimit" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="pcd8" msprop:design-time-name="8e115fe2-14be-4116-b47a-e64b5fd70d67" msprop:DbColumnName="pcd8" msprop:FriendlyName="pcd8" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_WeatherConditions" msprop:design-time-name="2dd3d96a-54cf-4f63-86b0-5a53867abdad" msprop:DbTableName="WeatherConditions" msprop:FriendlyName="WeatherConditions" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="WeatherConditions_ID" msprop:design-time-name="3c73f534-f9c5-4605-82e7-a802afa698f5" msprop:DbColumnName="WeatherConditions_ID" msprop:FriendlyName="WeatherConditions_ID">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Name" msprop:design-time-name="1755268d-f32f-4fbd-88f8-131e4b42fa76" msprop:DbColumnName="Name" msprop:FriendlyName="Name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_RoadType" msprop:design-time-name="c69a4877-b749-4357-89a9-1e75e5894d0f" msprop:DbTableName="RoadType" msprop:FriendlyName="RoadType" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="RoadType_ID" msprop:design-time-name="6c54671f-7c80-4110-a9c1-5d040fe6842c" msprop:DbColumnName="RoadType_ID" msprop:FriendlyName="RoadType_ID">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Name" msprop:design-time-name="692906e9-17a5-4344-9a27-c5a007237306" msprop:DbColumnName="Name" msprop:FriendlyName="Name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_LightConditions" msprop:design-time-name="f633a474-2d45-425f-adf5-07afc85144ae" msprop:DbTableName="LightConditions" msprop:FriendlyName="LightConditions" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="LightConditions_ID" msprop:design-time-name="69d3fd86-2d3b-4ea5-844e-91f567fe9d92" msprop:DbColumnName="LightConditions_ID" msprop:FriendlyName="LightConditions_ID">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Name" msprop:design-time-name="9fc392ce-f61c-47a7-aa0c-c5dd5af35b77" msprop:DbColumnName="Name" msprop:FriendlyName="Name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Conditions" msprop:design-time-name="3d2f6b35-d25d-4911-a0f4-45160035ced1" msprop:DbTableName="Conditions" msprop:FriendlyName="Conditions" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Conditions_ID" msprop:design-time-name="396573f9-eca4-4d31-ba43-b96da2aff896" msprop:DbColumnName="Conditions_ID" msprop:FriendlyName="Conditions_ID">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Name" msprop:design-time-name="10418b27-9899-4e05-bc0a-8e96424c85f4" msprop:DbColumnName="Name" msprop:FriendlyName="Name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Accident" />
+          <xs:field xpath="Accident_Index" />
+        </xs:unique>
+        <xs:unique name="dbo_WeatherConditions_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_WeatherConditions" />
+          <xs:field xpath="WeatherConditions_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_RoadType_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_RoadType" />
+          <xs:field xpath="RoadType_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_LightConditions_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_LightConditions" />
+          <xs:field xpath="LightConditions_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_Conditions_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Conditions" />
+          <xs:field xpath="Conditions_ID" />
+        </xs:unique>
+        <xs:keyref name="FK_Accident_RoadType" refer="dbo_RoadType_Constraint1">
+          <xs:selector xpath=".//dbo_Accident" />
+          <xs:field xpath="RoadType" />
+        </xs:keyref>
+        <xs:keyref name="FK_Accident_LightConditions" refer="dbo_LightConditions_Constraint1">
+          <xs:selector xpath=".//dbo_Accident" />
+          <xs:field xpath="LightConditions" />
+        </xs:keyref>
+        <xs:keyref name="FK_Accident_WeatherConditions" refer="dbo_WeatherConditions_Constraint1">
+          <xs:selector xpath=".//dbo_Accident" />
+          <xs:field xpath="WeatherConditions" />
+        </xs:keyref>
+        <xs:keyref name="FK_Accident_RoadSurfaceConditions" refer="dbo_Conditions_Constraint1">
+          <xs:selector xpath=".//dbo_Accident" />
+          <xs:field xpath="RoadSurfaceConditions" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <NDS_x0020_DATH xmlns="" />
+  </Schema>
+</DataSourceView>

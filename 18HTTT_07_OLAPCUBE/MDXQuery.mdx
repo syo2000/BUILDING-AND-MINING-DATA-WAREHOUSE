@@ -1,0 +1,43 @@
+-- The number of calsulities by Severity (Fatal, Serious, Slight) in the Local
+-- Authority Districts over years.
+select 
+non empty ([Dim Date].[Year].[Year],[Dim Accident Severity].[Accident Severity Key Name].[Accident Severity Key Name]) on columns,
+non empty ( [Dim Local Authority District].[Local Authority District Name].[Local Authority District Name]) on rows
+from [18HTTT_OLAPCUBE]
+where [Measures].[Number Of Casualties]
+-- The number of calsulities by Severity (Fatal, Serious, Slight) in the Local
+-- Authority Districts by Quarters in years.
+select 
+non empty ([Dim Date].[Year].[Year],[Dim Date].[Quater].[Quater],
+[Dim Accident Severity].[Accident Severity Key Name].[Accident Severity Key Name]) on columns,
+non empty ( [Dim Local Authority District].[Local Authority District Name].[Local Authority District Name]) on rows
+from [18HTTT_OLAPCUBE]
+where [Measures].[Number Of Casualties]
+
+-- the number of accidents by Severity and Time of Day (Morning: 5am-
+--12pm, Afternoon: 12pm-5pm, Evening: 5pm-9pm, Night: 9pm-5am) over years.
+select
+non empty ([Dim Date].[Sesion].[Sesion]) on rows,
+non empty ([Dim Date].[Year].[Year], [Dim Accident Severity].[Accident Severity Key Name].[Accident Severity Key Name]) on columns
+from [18HTTT_OLAPCUBE]
+where [Measures].[Fact Accident Count]
+
+-- the number of accidents by Severity, Urban or Rural Area and Road Type over year
+select 
+non empty ([Dim Urban Or Rural Area].[Urban Or Rural Area Name].[Urban Or Rural Area Name],[Dim Road Type].[Road Type Name].[Road Type Name]) on rows,
+non empty ([Dim Date].[Year].[Year],[Dim Accident Severity].[Accident Severity Key Name].[Accident Severity Key Name] ) on columns
+from [18HTTT_OLAPCUBE]
+where [Measures].[Fact Accident Count]
+
+-- the number of accidents by Journey Purpose and Vehicle Type.
+select 
+non empty ([Dim Vehicle Type].[Vehicle Type Name].[Vehicle Type Name]) on rows,
+non empty ([Dim Date].[Year].[Year],[Dim Journey Purpose Of Driver].[Journey Purpose Of Driver Name].[Journey Purpose Of Driver Name] ) on columns
+from [18HTTT_OLAPCUBE]
+where [Measures].[Fact Accident Count]
+-- the number of car accidents in regions during a year.
+select
+non empty ([Dim Date].[Year].[Year]) on columns,
+non empty ([Dim Geography].[Region Name].[Region Name]) on rows
+from [18HTTT_OLAPCUBE]
+where [Measures].[Fact Accident Count]
